@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Form>
+    <table>
+      <tr>
+          <td><label for="Title"><b>Title:</b></label><br>
+          <input type="text" id="Title" value="Astronomy for Poets" size="55">
+           </td>
+          <td><label for="Short Title"><b>Short Title:</b></label><br>
+          <input type="text" id="Short Title" value="Astr. for Poets">
+          </td>
+          <td><b>Subj.:</b><br>
+            BLST
+          </td>
+          <td><label for="Num."><b>Num.:</b></label><br>
+           <input type="number" id="Num." value="10" size="1">
+          </td>
+          <td><label for="number"><b>Section:</b></label><br>
+            <input type="number" id="Section" value="01" size="1">
+          </td>
+          <td><b>Year:</b><br>
+            0910
+      </tr>
+    </table>
+    <br>
+    <div>
+    <table border="1">
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="Enrollment_Limit">
+                        </td>
+                        <td>
+                            <pre>Enrollment <br>limit</pre>
+                        </td>
+                        <td>
+                            <b>Num.:</b><br>
+                            <input type="text" id="number" size="1">
+                        </td>
+                        <td>
+                            <b>Rationale:</b><br>
+                            <input type="text" id="Rationale" size="70">
+                        </td>                        
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="Consent_required">
+                        </td>
+                        <td>
+                            <pre>Consent <br>Required</pre>
+                        </td>
+                        <td></td>
+                        <td>
+                            <b>Rationale:</b><br>
+                            <input type="text" id="Rationale" size="70">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="Limit_class_level">
+                        </td>
+                        <td>
+                            <pre>Limit class<br>level</pre>
+
+                        </td>
+                        <td>
+                            <b>Code:</b><br>
+                            <input type="text" id="code" size="1">
+                        </td>
+                        <td>
+                            <b>Rationale:</b><br>
+                            <input type="text" id="Rationale" size="70">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <b>How to handle over-enrollment:</b><br>
+                            <input type="text" id="HTHOE" size="70">                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="prerequisite">
+                        </td>
+                        <td>
+                            <pre>Prerequisite</pre>
+                        </td>
+                        <td></td>                      
+                        <td>
+                            <b>Rationale:</b><br>
+                            <input type="text" id="Rationale" size="70">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <b>Required Prereqs. (major,course):</b><br>
+                            <input type="text" id="RP" size="70">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <b>Recommended Prereqs.:</b><br>
+                            <input type="text" id="ReP" size="70">
+                        </td>                       
+                    </tr>
+                </table>
+                <td rowspan="1">
+                    <b>Class<br>
+                    Meetings/Week:</b><br>
+                    <select name="Meetings/Week" id="meetings">
+                        <option value="0">0</option>
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                    </select><br>
+                    <br>
+                    <b>Class Hours/Week:</b><br>
+                    <select name="ClassHours/Week" id="hours">
+                        <option value="0"selected>0</option>
+                        <option value="1" >1</option>
+                        <option value="2">2</option>
+                    </select><br>
+                    <br>
+                    <b>Semester(s) Offered:</b><br>
+                    <select name="Semesters_Offered" id="semesters">
+                    <option value="-None-"selected>-None-</option>
+                        <option value="1" >1</option>
+                        <option value="2">2</option>
+                    </select><br>
+                    <br>
+                    <input type="checkbox" id="ISIP" name="Incl. semester in prereqs." selected>Incl. semesters in <br>prereqs.<br><br>
+                    <input type="checkbox" id="OOO" name="Offered only once">Offered only once<br><br>
+                    <input type="checkbox" id="IIPC" name="">Incl. in printed<br>catalog<br><br>
+                 </td>
+                 <td rowspan="1">
+                     <b>Keywords:</b><br>
+                     <input type="checkbox" id="SFNM" name="Science for non-majors">Science for non-majors<br><br>
+                     <input type="checkbox" id="FAFNM" name="Fine arts for non-majors">Fine arts for non-majors<br><br>
+                     <input type="checkbox" id="LSC" name="Lab science course">Lab science course<br><br>
+                     <input type="checkbox" id="AP" name="Artistic practice">Artistic practice<br><br>
+                     <input type="checkbox" id="FLCTE" name="Foreign language/culture taught in English">Foreign language/culture taught in English<br><br>
+                     <input type="checkbox" id="CBL" name="Community based learning">Community based learning<br><br>
+                     <input type="checkbox" id="WA" name="Writing attentive">Writing attentive<br><br>
+                     <input type="checkbox" id="WI" name="Writing intensive">Writing intensive<br>
+                 </td>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td><b>Approval:</b></td>
+            <td><b>Date:</b></td>
+            <td><b>Comments:</b></th>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" id="CEP" name="CEP">CEP
+            </td>
+            <td> 
+                + <input type="text" id="date" size="30">
+            </td>
+            <td>
+                + <input type="text" id="date" size="70">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" id="COS" name="Committee of six">Committee of Six
+            </td>
+            <td>
+                + <input type="text" id="date" size="30">
+                </td>
+                <td>
+                    + <input type="text" id="date" size="70">
+                </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" id="F" name="Faculty">Faculty
+            </td>
+            <td> 
+                + <input type="text" id="date" size="30">
+            </td>
+            <td>
+                + <input type="text" id="date" size="70">
+            </td>
+        </tr>
+    </table>
+    </div>
+</Form>
+</body>
+</html>
