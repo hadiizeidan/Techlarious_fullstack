@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+    <link rel="stylesheet" href="./style.css">
+
+<body>
+    <div class="title">
+        <label id="monster">Kill The Monster</label>
+    </div>
+    <br>
+
+    <div class="MonsterHealth">
+        <label id="MonsterHealth"> Monster Health</label>
+        <div class="HealthBar">
+            <div class="greenbar" id="GB1" style="width: 100%"></div>
+        </div>
+    </div>
+
+    <div class="YourHealth">
+        <label id="YourHealth"> Your Health </label>
+        <div class="HealthBar">
+            <div class="greenbar" id="GB2" style="width:100%"></div>
+        </div>
+    </div>
+
+    <div class="table">
+        <table id="table">
+            <tr>
+                <td><input type="button" value="ATTACK" onclick="ATTACK()"></td>
+                <td><input type="button" value="SPECIAL  ATTACK" onclick="SPECIALATTACK()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="HEAL" onclick="HEAL()"></td>
+                <td><input type="button" value="GIVE UP" onclick="GIVEUP()"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="BattleLog">
+        <span id="Battle-Log">Battle Log</span>
+        <pre id="battlelog-attack">
+            </pre>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
