@@ -7,6 +7,7 @@ const randnum = (min, max) => Math.floor(Math.random() * (max + 1 - min) + min);
 function ATTACK() {
     let randnum1 = randnum(1, 15);
     let randnum2 = randnum(1, 15);
+    clicked = 0;
     const currentMonsterHealth = parseInt(MonsterHealth.style.width);
     const currentYourHealth = parseInt(YourHealth.style.width);
     MonsterHealth.style.width = ((currentMonsterHealth - randnum1) + "%");
